@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HRbank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl font-semibold mt-8 text-center">
+        Welcome to <span class="text-violet-400">HR Bank</span>
+      </h1>
+    </header>
+    <main>
+      <section class="container bg-blue-100 w-9/12 mx-auto mt-12 p-8">
+        <h3 class="text-3xl font-medium mb-4">Please Login</h3>
+        <div>
+          <input
+            class="w-9/12 block px-3 mb-2"
+            type="email"
+            name=""
+            id="user-email"
+            placeholder="please enter your email address"
+          />
+          <input
+            class="w-9/12 block px-3 mb-4"
+            type="password"
+            name=""
+            id="user-password"
+            placeholder="please enter your password"
+          />
+          <button
+            id="btn-submit"
+            class="px-6 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
+            type="submit"
+          >
+            Login
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

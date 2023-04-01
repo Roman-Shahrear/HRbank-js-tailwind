@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-violet-400 text-3xl font-semibold mt-4 text-center">Bank Features</h1>
+        <h3 class="text-5xl font-bold mt-8 text-center">Get withdraw your<span class="text-violet-400"> money</span></h3>
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div class="max-w-sm p-6 mt-12 bg-purple-300 text-white text-center text-3xl font-bold border border-gray-200 rounded-lg shadow hover:bg-purple-400 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h3>Deposit</h3>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="max-w-sm p-6 mt-12 bg-yellow-300 text-white text-center text-3xl font-bold border border-gray-200 rounded-lg shadow hover:bg-yellow-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h3>Withdraw</h3>
+                    <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="max-w-sm p-6 mt-12 bg-green-400 text-white text-center text-3xl font-bold border border-gray-200 rounded-lg shadow hover:bg-green-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h3>Total Balance</h3>
+                    <h2 class="text-5xl">$<span id="total-balance">00</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="p-6 bg-blue-400 border border-gray-200 rounded-lg shadow dark:bg-gray-800 hover:bg-blue-600 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h3 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Please Deposit</h3>
+                    <input class="w-9/12 block px-3 mb-2 rounded-lg border-gray-200" type="text" name="" id="deposit-field"placeholder="$please enter your deposit amount"/>
+                    <button id="btn-deposit"class="px-6 py-1 mt-1 text-sm text-purple-600 font-semibold rounded-lg border border-black-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+                        Deposit
+                    </button>
+                </div>
+                <!-- card -->
+                <div class="p-6 bg-lime-400 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:bg-lime-600 hover:bg-gray-700">
+                    <h3 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Withdraw Amount</h3>
+                    <input class="w-9/12 block px-3 mb-2 rounded-lg border-gray-200" type="text" name="" id="withdraw-field"placeholder="$please enter your withdraw amount"/>
+                    <button id="btn-withdraw" class="px-6 py-1 mt-1 text-sm text-purple-600 font-semibold rounded-lg border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+                        Withdraw
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+</html>
